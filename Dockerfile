@@ -12,6 +12,7 @@ COPY --chown=node:node ./ ./
 RUN npm run build
 
 FROM nginx
+EXPOSE 80
 
 WORKDIR '/home/node/app'
 
